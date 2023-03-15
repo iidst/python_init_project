@@ -1,5 +1,5 @@
 from config.config import conf
-from cmd.ex_run.ex_run_factory import create_run
+from cmds.ex_run.ex_run_factory import create_run
 from common.log import logger
 
 if __name__ == '__main__':

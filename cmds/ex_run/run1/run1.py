@@ -1,4 +1,4 @@
-from cmd.ex_run.ex_run import Ex_Run
+from cmds.ex_run.ex_run import Ex_Run
 
 
 class Run1(Ex_Run):
