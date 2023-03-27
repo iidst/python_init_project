@@ -19,8 +19,8 @@ def _get_logger():
     console_handle.setFormatter(formatter)
 
     # 文件handler
-    if not os.path.isdir("logs"):
-        os.makedirs("logs")
+    if not os.path.isdir(os.path.join(settings.CURR_PATH, "logs")):
+        os.makedirs(os.path.join(settings.CURR_PATH, "logs"))
     file_handler = logging.FileHandler(os.path.join(settings.CURR_PATH, "logs", "run.log"))
     file_handler.setFormatter(formatter)
 
